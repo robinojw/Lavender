@@ -1,3 +1,5 @@
+import { Layout } from "../shared/layout/layout";
+
 export default function Home() {
-  return <div />;
+  return <Layout></Layout>;
 }
