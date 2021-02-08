@@ -8,5 +8,5 @@ export interface Cta {
 export interface Picture {
   alt: string;
   fallbackImg: string;
-  image: string;
+  webp: string;
 }

@@ -1,4 +1,4 @@
-import { Picture, Cta } from "../shared/content";
+import { Picture, Cta } from "../../shared/content";
 
 interface HeroContent {
   title: string;
@@ -7,7 +7,7 @@ interface HeroContent {
 }
 
 interface HeroProps {
-  footer: HeroContent;
+  hero: HeroContent;
 }
 
 export const Hero = ({ hero }: HeroProps) => {
