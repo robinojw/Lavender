@@ -1,4 +1,4 @@
-## Next JS Starter
+## Lavender, English teacher based in Madrid.
 
 `Next JS`
 `React`
@@ -6,7 +6,6 @@
 `Styled Components`
 `Graph CMS`
 `ESLint`
-
 ## Getting Started
 
 First, run the development server:
