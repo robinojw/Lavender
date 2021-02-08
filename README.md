@@ -1,10 +1,11 @@
-## Lavender, English teacher based in Madrid.
+## Next JS Starter
 
 `Next JS`
 `React`
 `TypeScript`
 `Styled Components`
 `Graph CMS`
+`ESLint`
 
 ## Getting Started
 
