@@ -11,12 +11,14 @@ interface LearnProps {
   learn: LearnContent;
 }
 
-export const Hero = ({ learn }: LearnProps) => {
+export const Learn = ({ learn }: LearnProps) => {
   return (
     <div className={styles.learn}>
       <div className={styles.info}>
-        <h2>{learn.title}</h2>
-        <p>{learn.description}</p>
+        <div>
+          <h2>{learn.title}</h2>
+          <p>{learn.description}</p>
+        </div>
       </div>
       <picture>
         <source srcSet={learn.image.webp} type="image/webp" />
