@@ -20,7 +20,7 @@ export const Button = ({ button, newTab }: ButtonProps) => {
 
   return (
     <span className={styles.button}>
-      {newTab ? (
+      {!newTab ? (
         <a onClick={() => scrollToSection(button.link)}>{button.name}</a>
       ) : (
         <a href={button.link} target="_blank" rel="noopener noreferrer">

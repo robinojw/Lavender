@@ -2,9 +2,10 @@
 @import '/scss/breakpoints.scss';
 
 .button a {
-  padding: 16px 26px;
-  font: 400 22px 'Prata', sans-serif;
   border: solid 1.5px $colour-navy;
+  cursor: pointer;
+  font: 400 22px 'Prata', sans-serif;
+  padding: 16px 26px;
 
   @include lg {
     font-size: 18px;
