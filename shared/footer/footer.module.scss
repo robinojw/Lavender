@@ -1,0 +1,49 @@
+@import '/scss/colours.scss';
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 80px);
+  min-height: 256px;
+  background: $colour-pink;
+  justify-content: space-between;
+  padding: 0 40px;
+
+  div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .social {
+      flex-direction: row;
+      width: 160px;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      a {
+        margin: 10px 0;
+      }
+    }
+
+    p {
+      white-space: pre-line;
+      font: 400 18px 'Lato', sans-serif;
+      margin: 10px 0;
+    }
+
+    a {
+      font: 400 18px 'Lato', sans-serif;
+    }
+
+    .classy {
+      font-size: 10px;
+      a{
+        font-size: 10px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

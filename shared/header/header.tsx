@@ -19,7 +19,7 @@ export const Header = ({ header }: HeaderProps) => {
 
   const menuAni = menu
     ? {
-        transform: "translateX(25%)"
+        transform: "translateX(40%)"
       }
     : { transform: "translateX(100%)" };
 
