@@ -4,7 +4,7 @@ import { Layout } from "../shared/layout/layout";
 const hero = {
   title: "Lavender English, fast and fun learning.",
   image: {
-    webp: "/map.png",
+    webp: "/webp/map.webp",
     fallbackImg: "/map.png",
     alt: "Map of Madrid"
   },
