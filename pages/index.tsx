@@ -1,6 +1,6 @@
+import { CourseInfo } from "../components/course-info/course-info";
 import { Hero } from "../components/hero/hero";
 import { Learn } from "../components/learn/learn";
-import { Layout } from "../shared/layout/layout";
 
 const hero = {
   title: "Lavender English, fast and fun learning.",
@@ -26,11 +26,28 @@ const learn = {
   }
 };
 
+const courseInfo = {
+  title: "Our Course",
+  description1:
+    "This course is intended for advanced English speakers who are able to engage in conversations. This course aims to improve your use and knowledge of past tense verbs, phrasal verbs, idioms, pronunciation, word order and general vocabulary.",
+  description2:
+    "I am an experienced and certified English teacher based in Madrid, Spain. My teaching method is based on learning language through cultural exchanges. My courses involve teaching English by incorporating new grammar rules into conversation and discussion. Learn English while talking about fun and interesting topics!",
+  image: {
+    webp: "webp/course-info.webp",
+    fallbackImg: "course-info.jpg"
+  },
+  caption: {
+    link: "/course",
+    name: "Find out more"
+  }
+};
+
 export default function Home() {
   return (
-    <Layout>
+    <>
       <Hero hero={hero} />
       <Learn learn={learn} />
-    </Layout>
+      <CourseInfo courseInfo={courseInfo} />
+    </>
   );
 }

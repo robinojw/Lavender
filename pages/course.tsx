@@ -1,3 +1,7 @@
 export default function Course() {
-  return <div />;
+  return (
+    <>
+      <div></div>
+    </>
+  );
 }
