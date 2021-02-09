@@ -34,7 +34,8 @@ const courseInfo = {
     "I am an experienced and certified English teacher based in Madrid, Spain. My teaching method is based on learning language through cultural exchanges. My courses involve teaching English by incorporating new grammar rules into conversation and discussion. Learn English while talking about fun and interesting topics!",
   image: {
     webp: "webp/course-info.webp",
-    fallbackImg: "course-info.jpg"
+    fallbackImg: "course-info.jpg",
+    alt: "Learn more about the course by clicking here"
   },
   caption: {
     link: "/course",
