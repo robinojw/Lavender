@@ -1,6 +1,7 @@
 import { CourseInfo } from "../components/course-info/course-info";
 import { Hero } from "../components/hero/hero";
 import { Learn } from "../components/learn/learn";
+import { SignUp } from "../components/signup/signup";
 import { Testimonials } from "../components/testimonials/testimonials";
 
 const hero = {
@@ -65,12 +66,41 @@ const courseInfo = {
   }
 };
 
+const signup = {
+  title:
+    "There is no better time to start learning than now, sign up and join our growing list of student’s!",
+  features: [
+    {
+      image: "/download.svg",
+      description:
+        "Missed a lesson?\nNot to worry, ours are all available on demand"
+    },
+    {
+      image: "/speaker.svg",
+      description:
+        "We like to focus on the details, ensuring your pronounciation and grammer is perfect."
+    },
+    {
+      image: "/tick.svg",
+      description:
+        "Struggling?\nWe allow our students to revisit lessons and will help guide them through tricky topics."
+    }
+  ],
+  price: "€40",
+  term: "Per Month",
+  button: {
+    name: "Sign Up",
+    link: "/signup"
+  }
+};
+
 export default function Home() {
   return (
     <>
       <Hero hero={hero} />
       <Learn learn={learn} />
       <CourseInfo courseInfo={courseInfo} />
+      <SignUp signup={signup} />
       <Testimonials testimonials={testimonials} />
     </>
   );
