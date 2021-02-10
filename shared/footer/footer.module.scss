@@ -1,3 +1,4 @@
+@import '/scss/breakpoints.scss';
 @import '/scss/colours.scss';
 
 .footer {
@@ -10,6 +11,11 @@
   justify-content: space-between;
   padding: 0 40px;
 
+  @include md {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+
   div {
     width: fit-content;
     display: flex;
@@ -20,6 +26,14 @@
       width: 160px;
       justify-content: space-between;
       margin-bottom: 20px;
+
+      @include md {
+        width: 120px;
+
+        img {
+          width: 25px;
+        }
+      }
     }
 
     .links {
@@ -32,10 +46,18 @@
       white-space: pre-line;
       font: 400 18px 'Lato', sans-serif;
       margin: 10px 0;
+
+      @include md {
+        font-size: 15px;
+      }
     }
 
     a {
       font: 400 18px 'Lato', sans-serif;
+
+      @include md {
+        font-size: 15px;
+      }
     }
 
     .classy {
