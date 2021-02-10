@@ -25,7 +25,6 @@
 
     @include lg {
       flex-direction: column;
-      gap: 24px 0;
     }
 
     .card {
@@ -40,6 +39,7 @@
 
       @include lg {
         align-self: center;
+        margin-top: 24px;
         max-width: 400px;
         width: 100%;
       }
