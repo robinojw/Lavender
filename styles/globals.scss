@@ -1,12 +1,15 @@
 @import '/scss/colours.scss';
 
 html, body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   background: $colour-lavender;
   margin: 0;
+  max-width: 100%;
   overflow-x: hidden;
   padding: 0;
+  text-rendering: optimizeLegibility;
   width: 100%;
-  max-width: 100%;
 }
 
 a {
