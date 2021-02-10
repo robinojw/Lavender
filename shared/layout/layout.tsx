@@ -35,7 +35,7 @@ const footer = {
   ],
   links: [
     {
-      name: "Back to top ",
+      name: "Back to top ↑",
       link: "#top"
     },
     {
