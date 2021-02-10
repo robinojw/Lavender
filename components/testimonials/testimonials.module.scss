@@ -1,0 +1,59 @@
+@import '/scss/breakpoints.scss';
+@import '/scss/colours.scss';
+
+.testimonials {
+  margin: 100px 0;
+  width: 100%;
+
+  @include sm {
+    margin: 100px 20px;
+    width: calc(100% - 40px);
+  }
+
+  h2 {
+    font: 400 36px 'Prata', sans-serif;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: row;
+    gap: 0 24px;
+    justify-content: space-between;
+    width: 100%;
+
+    @include lg {
+      flex-direction: column;
+      gap: 24px 0;
+    }
+
+    .card {
+      align-items: flex-start;
+      background: $colour-pink;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      height: 328px;
+      justify-content: space-between;
+      padding: 15px 25px;
+
+      @include lg {
+        align-self: center;
+        max-width: 400px;
+        width: 100%;
+      }
+
+
+      .quote {
+        font: 400 24px 'Prata', sans-serif;
+        max-width: calc(100% - 50px);
+      }
+
+      .subText {
+        font: 400 14px 'Lato', sans-serif;
+        line-height: 8px;
+      }
+    }
+  }
+}

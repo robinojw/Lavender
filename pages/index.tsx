@@ -1,6 +1,7 @@
 import { CourseInfo } from "../components/course-info/course-info";
 import { Hero } from "../components/hero/hero";
 import { Learn } from "../components/learn/learn";
+import { Testimonials } from "../components/testimonials/testimonials";
 
 const hero = {
   title: "Lavender English, fast and fun learning.",
@@ -26,6 +27,27 @@ const learn = {
   }
 };
 
+const testimonials = {
+  title: "Testimonials",
+  ratings: [
+    {
+      quote: "I loved learning with Grace, the course was so fun and engaging.",
+      name: "Harriet Long",
+      subscription: "13 Month Subscriber"
+    },
+    {
+      quote: "I loved learning with Grace, the course was so fun and engaging.",
+      name: "Harriet Long",
+      subscription: "13 Month Subscriber"
+    },
+    {
+      quote: "I loved learning with Grace, the course was so fun and engaging.",
+      name: "Harriet Long",
+      subscription: "13 Month Subscriber"
+    }
+  ]
+};
+
 const courseInfo = {
   title: "Our Course",
   description1:
@@ -49,6 +71,7 @@ export default function Home() {
       <Hero hero={hero} />
       <Learn learn={learn} />
       <CourseInfo courseInfo={courseInfo} />
+      <Testimonials testimonials={testimonials} />
     </>
   );
 }
