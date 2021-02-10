@@ -11,7 +11,7 @@
   justify-content: space-between;
   padding: 0 40px;
 
-  @include md {
+  @include sm {
     width: calc(100% - 40px);
     padding: 0 20px;
   }
@@ -27,7 +27,7 @@
       justify-content: space-between;
       margin-bottom: 20px;
 
-      @include md {
+      @include sm {
         width: 120px;
 
         img {
@@ -47,7 +47,7 @@
       font: 400 18px 'Lato', sans-serif;
       margin: 10px 0;
 
-      @include md {
+      @include sm {
         font-size: 15px;
       }
     }
@@ -55,7 +55,7 @@
     a {
       font: 400 18px 'Lato', sans-serif;
 
-      @include md {
+      @include sm {
         font-size: 15px;
       }
     }
