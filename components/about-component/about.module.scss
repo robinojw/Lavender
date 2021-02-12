@@ -32,15 +32,27 @@
     h2 {
       font: 400 36px 'Prata', sans-serif;
       width: 100%;
+
+      @include sm {
+        font-size: 28px;
+      }
     }
 
     p, a {
       font: 400 16px 'Lato', sans-serif;
       margin-top: 0;
+
+      @include sm {
+        font-size: 14px;
+      }
     }
 
     .primary {
       font: 400 20px 'Lato', sans-serif;
+
+      @include sm {
+        font-size: 18px;
+      }
     }
 
     .contact {
