@@ -1,18 +1,12 @@
 @import '/scss/breakpoints.scss';
 
 .about {
-  animation: about 1s ease-out;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 20px;
   padding: 100px 0 180px;
   width: calc(100% - 40px);
-
-  @keyframes about {
-    0% {opacity: 0; transform: translateY(50px);}
-    100%{opacity: 1; transform: translateY(0px);}
-  }
 
   @include xl {
     align-items: center;
