@@ -21,12 +21,8 @@ export const Learn = ({ learn }: LearnProps) => {
         </div>
       </div>
       <picture>
-        <source srcSet={learn.image.webp} type="image/webp" />
-        <img
-          alt={learn.image.alt}
-          src={learn.image.fallbackImg}
-          loading="lazy"
-        />
+        <source srcSet={learn.image.url} type="image/webp" />
+        <img src={learn.image.url} loading="lazy" />
       </picture>
     </div>
   );

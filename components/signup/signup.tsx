@@ -1,5 +1,3 @@
-import { sign } from "crypto";
-
 import { Button } from "../../shared/button/button";
 import { Cta } from "../../shared/content";
 import styles from "./signup.module.scss";
@@ -10,7 +8,7 @@ interface Features {
 }
 
 interface SignUpContent {
-  button: Cta;
+  cta: Cta;
   features: Array<Features>;
   price: string;
   term: string;
@@ -28,7 +26,7 @@ export const SignUp = ({ signup }: SignUpProps) => {
       <div className={styles.features}>
         {signup.features.map((feat, index) => (
           <div key={index} className={styles.feat}>
-            <img src={feat.image} loading="lazy" alt="" />
+            <img src={feat.image.url} loading="lazy" alt="" />
             <p>{feat.description}</p>
           </div>
         ))}
@@ -36,7 +34,7 @@ export const SignUp = ({ signup }: SignUpProps) => {
       <div className={styles.pricing}>
         <p>{signup.price}</p>
         <p>{signup.term}</p>
-        <Button button={signup.button} newTab={false} />
+        <Button button={signup.cta} newTab={false} />
       </div>
     </div>
   );

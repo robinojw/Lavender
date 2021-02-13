@@ -6,7 +6,7 @@ interface CourseContent {
   title: string;
   description1: string;
   description2: string;
-  caption: Cta;
+  cta: Cta;
   image: Picture;
 }
 
@@ -23,9 +23,9 @@ export const CourseInfo = ({ courseInfo }: CourseProps) => {
       <div className={styles.info}>
         <p className={styles.medium}>{courseInfo.description1}</p>
         <p>{courseInfo.description2}</p>
-        <a href={courseInfo.caption.link}>
+        <a href={courseInfo.cta.link}>
           <picture>
-            <source srcSet={courseInfo.image.webp} type="image/webp" />
+            <source srcSet={courseInfo.image.url} type="image/webp" />
             <img
               alt={courseInfo.image.alt}
               src={courseInfo.image.fallbackImg}
@@ -33,11 +33,11 @@ export const CourseInfo = ({ courseInfo }: CourseProps) => {
             />
           </picture>
         </a>
-        <a className={styles.caption} href={courseInfo.caption.link}>
+        <a className={styles.caption} href={courseInfo.cta.link}>
           <div>
             <p>→</p>
           </div>
-          <p>{courseInfo.caption.name}</p>
+          <p>{courseInfo.cta.name}</p>
         </a>
       </div>
     </div>
